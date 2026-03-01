@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void FindRepeatingElements(vector<int> &arr,int n){
+void FindNonRepeatingElements(vector<int> &arr,int n){
     unordered_map<int,int> mpp;
     for(auto i:arr) ++mpp[i];
 
@@ -21,6 +21,6 @@ int main(){
         cin >> arr[i];
     }
 
-    FindRepeatingElements(arr,n);
+    FindNonRepeatingElements(arr,n);
     return 0;
 }
